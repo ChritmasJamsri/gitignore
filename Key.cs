@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Ster : MonoBehaviour
+public class Key : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
 
+
+        
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("COUNT+10");
+            Debug.Log("Key+1");
             gameObject.SetActive(false);
-
+            
 
             PlayerController player = GameObject.FindAnyObjectByType<PlayerController>();
-            player.AddScore();
+            player.AddScorekey();
 
         }
     }

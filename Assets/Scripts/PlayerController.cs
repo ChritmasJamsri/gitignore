@@ -5,8 +5,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 100f;
-                        
+    [SerializeField] private int score = 0;
+    [SerializeField] private int scorekey = 0;
+
+
     private Rigidbody rb;
+
+    public void AddScore()
+    {
+        score = score + 1;
+    }
+
+    public void AddScorekey()
+    {
+        scorekey = scorekey +1 ;
+    }
 
 
     // Start is called before the first frame update
