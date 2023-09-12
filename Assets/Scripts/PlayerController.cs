@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 100f;
     [SerializeField] private int score = 0;
-    [SerializeField] private int scorekey = 0;
     [SerializeField] private int Key = 0;
+
 
     private Rigidbody rb;
 
@@ -18,13 +18,20 @@ public class PlayerController : MonoBehaviour
 
     public void AddScorekey()
     {
-        scorekey = scorekey +1 ;
+        Key = Key +1;
     }
 
     public int Addkey()
     {
-        return scorekey;
+        return score;
     }
+
+    public int Keytext()
+    {
+        return Key;
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
