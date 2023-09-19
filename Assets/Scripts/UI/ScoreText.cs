@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class ScoreText : MonoBehaviour
 {
+    [SerializeField] public PlayerData playerData;
 
-    
-    [SerializeField] private PlayerController player;
+   
     [SerializeField] private TMP_Text  text;
 
 
@@ -18,6 +18,6 @@ public class ScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = player.Addkey().ToString();
+        text.text = playerData.score.ToString();
     }
 }

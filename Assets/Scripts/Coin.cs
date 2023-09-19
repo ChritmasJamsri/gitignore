@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Ster : MonoBehaviour
+public class Coin : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {

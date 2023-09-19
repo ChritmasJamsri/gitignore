@@ -4,32 +4,41 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 100f;
-    [SerializeField] private int score = 0;
-    [SerializeField] private int Key = 0;
 
+
+    [SerializeField] private float rotationSpeed = 100f;
+
+
+    [SerializeField] private Soundlibrary sound;
+    public PlayerData PlayerData;   
 
     private Rigidbody rb;
 
     public void AddScore()
     {
-        score = score + 1;
+        PlayerData.score = PlayerData.score + 1 ;
+       
+
+         audioSource.Play();
     }
 
     public void AddScorekey()
     {
-        Key = Key +1;
+        PlayerData.Key = PlayerData.Key + 1;
     }
 
     public int Addkey()
     {
-        return score;
+        return PlayerData.score;
     }
 
     public int Keytext()
     {
-        return Key;
+        return PlayerData.Key;
     }
+
+
+    private AudioSource audioSource;
 
 
 
@@ -37,6 +46,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = sound.coin;
 
     }
 
