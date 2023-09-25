@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class manu : MonoBehaviour
 {
-   public void OnPlayerButton()
+   public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadSceneAsync(1);
     }
 
-    public void onquitButton()
+    public void QuitGame()
     {
         Application.Quit();
     }
