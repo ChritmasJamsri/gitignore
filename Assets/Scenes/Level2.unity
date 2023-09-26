@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 141.82831
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 116.95972
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759111464953425408, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65
+      objectReference: {fileID: 0}
     - target: {fileID: 1759111465196480145, guid: 3b1a0e44fccea244da0c0b2505bc4c08, type: 3}
       propertyPath: m_Name
       value: Canvas
